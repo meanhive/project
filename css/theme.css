@@ -1,0 +1,87 @@
+:root {
+  --light-bg-color: #ccc;
+  --dark-bg-color: #333;
+  --text-color: #fff;
+  --link-color: #fff;
+  --logo-color: deepskyblue;
+  --text-size: 1.4em;
+}
+
+body {
+  background-color: var(--light-bg-color);
+  padding: 0;
+  margin: 0;
+}
+
+/* top bar sizes */
+
+.top-bar .size {
+  padding: 10px;
+}
+
+/* menu design */
+.menu {
+  width: 100% auto !important;
+  height: 3%;
+  background: var(--dark-bg-color);
+  display: flex;
+  padding: 20px;
+}
+
+.menu .logo {
+  text-transform: uppercase;
+}
+
+.menu .container {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 40px !important;
+}
+
+.menu .container ul li {
+  float: left;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.menu .container ul li a,
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: var(--text-size);
+}
+
+@media screen and (max-width: 560px) {
+  .menu .logo {
+    position: absolute;
+    left: 30%;
+  }
+
+  .menu .container {
+    float: none;
+    position: relative;
+    top: 20px !important;
+    left: -20px !important;
+    margin: 0;
+    width: 100% !important;
+  }
+
+  .menu .container ul li {
+    float: none;
+    padding: 10px;
+    text-align: center;
+    padding-left: 0;
+    background-color: var(--light-bg-color);
+    width: 100% !important;
+  }
+
+  .menu .container ul li a {
+    color: var(--dark-bg-color);
+    font-weight: bold;
+  }
+
+  .menu .container ul li a:hover {
+    color: var(--link-color);
+  }
+}
