@@ -20,7 +20,7 @@
         </div>
     </div>
     <nav class="menu">
-        <a href="/index.php" class="logo"> <?php echo $APP_NAME; ?> </a>
+        <a href="index.php" class="logo"> <?php echo $APP_NAME; ?> </a>
         <div class="container">
             <ul>
                 <li>
@@ -35,6 +35,10 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container">
+        <h1>Home Page</h1>
+    </div>
 </body>
 
 </html>
